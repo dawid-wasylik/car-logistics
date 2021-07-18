@@ -1,15 +1,15 @@
-<div [ngClass]="{ 'nav-item': inNavbar }" ngbDropdown>
+<div>
   <a *ngIf="inNavbar; else button" id="language-dropdown" class="nav-link" ngbDropdownToggle>
-    {{ currentLanguage | translate }}
+    {{ currentLanguage }}
   </a>
   <ng-template #button>
     <button id="language-dropdown" class="btn btn-sm btn-secondary" ngbDropdownToggle>
       {{ currentLanguage }}
     </button>
   </ng-template>
-  <div ngbDropdownMenu aria-labelledby="language-dropdown" [ngClass]="menuClass">
+  <div ngbDropdownMenu aria-labelledby="language-dropdown">
     <button class="dropdown-item" *ngFor="let language of languages" (click)="setLanguage(language)">
-      {{ language | translate }}
+      {{ language }}
     </button>
   </div>
 </div>

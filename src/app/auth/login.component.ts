@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { finalize } from 'rxjs/operators';
-
 import { environment } from '@env/environment';
 import { Logger, UntilDestroy, untilDestroyed } from '@core';
 import { AuthenticationService } from './authentication.service';

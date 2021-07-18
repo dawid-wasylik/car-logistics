@@ -7,7 +7,10 @@
 @import "theme/theme-variables";
 
 // 3rd party libraries
-@import "~bootstrap/scss/bootstrap";
+@import "~primeflex/primeflex.css";
+@import "~primeicons/primeicons.css";
+@import "~primeng/resources/themes/arya-blue/theme.css";
+@import "~primeng/resources/primeng.min.css";
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 @import "~@fortawesome/fontawesome-free/scss/regular.scss";
