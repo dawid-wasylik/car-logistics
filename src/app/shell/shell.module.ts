@@ -7,8 +7,21 @@ import { AuthModule } from '@app/auth';
 import { ShellComponent } from './shell.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
+import { MenubarModule } from 'primeng/menubar';
 @NgModule({
-  imports: [CommonModule, TranslateModule, AuthModule, I18nModule, RouterModule, FormsModule],
+  imports: [
+    CommonModule,
+    InputTextModule,
+    MenubarModule,
+    ButtonModule,
+    TranslateModule,
+    AuthModule,
+    I18nModule,
+    RouterModule,
+    FormsModule,
+  ],
   declarations: [HeaderComponent, ShellComponent],
 })
 export class ShellModule {}
